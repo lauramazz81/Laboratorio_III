@@ -1,0 +1,26 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(rgb(207, 22, 136), green, blue, alpha);
+    position: absolute; /*static que se queda en el lugar donde el html lo deja, es el valor x default: relative: la posicion varia segun q le seteemos a las otros atributo*/
+    top:25px;
+    left: 25px;
+    z-index:-2;
+}
+
+body{
+    
+        height: 1000px;
+    }
+
+.interno{
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  position: absolute;
+  top:10px;
+  left:10px;
+  z-index: -1;
+
+}
+

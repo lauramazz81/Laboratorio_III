@@ -1,0 +1,61 @@
+ul{
+    list-style-type: none;
+
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box; /*sumo el width al padding, se adapta*/
+}
+
+ul li {
+    background-color: lightblue;
+    float: left;
+    width:33%;
+    padding: 10px;
+     /*--a{
+
+     }*/
+     border-right:4px gray solid;
+}
+
+ul li a{
+  text-decoration: none;
+  color:white;
+  display: block; /*para que ocupe todo el ancho del li*/  
+  text-align: center;
+}
+
+ul li :hover{
+background-color:blue;
+
+}
+
+ /*navegar a todos los hijos y buscar el último*/
+ul li:last-child{
+  border-right: none;
+  border-bottom: none;
+}
+/*
+@media only screen and(min-width: 500px) {
+  ul li{
+      float:none;
+      border-right: none;
+
+  }*/
+
+  @media only screen and (min-width: 500px) {
+    ul li{
+        float:none;
+        border-right: none;
+        border-bottom: 4px solid gray;
+        position: relative;
+        left:-150px; 
+        transition: left 3s;
+    }
+}
+
+ul li :hover{
+    left:0px;
+}

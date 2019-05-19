@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>laboratorio3</title>
+</head>
+<body>
+
+      <h1>Formularios</h1>
+
+      <form id="frm1" action="#" method="GET">
+            <p>
+        <label for="txtNombre">Nombre: </label>        
+        <input type="text" id="txtNombre" name="nombre" > <!--tmb puedo meter el input dentro del label-->
+        </p>
+        <p>
+         <label for="txtClave">Clave: </label>
+        <input type="password" id="txtClave" name="clave"> </p> <!--class gralm lo uso para css -->
+        <input type="submit" value="EEnviar">
+        <input type="button" id="btnEnviar" value="un boton">
+        <button>Enviar Formulario</button>
+        <input type="reset">
+
+
+        <script>
+        var txtNombre = document.getElementById('txtNombre');
+        var frm = document.getElementsByTagName('form')[0];
+        var frm = document.getElementById(frm1);
+        /*frm.addEventListener('submit', manejarSubmit);
+
+        function manejarSubmit(e){
+            e.preventDefault(); 
+            alert("Maneje el submit");
+        }*/
+
+        /*frm.addEventListener('submit', function(e){
+            e.preventDefault(); 
+            alert("Maneje el submit");
+
+        });*/
+
+        frm1.addEventListener('submit', (e)=>{
+            e.preventDefault(); 
+            alert("Maneje el submit");
+
+        });
+
+      
+
+        </script>
+       
+      </form>
+            
+</body>
+</html>

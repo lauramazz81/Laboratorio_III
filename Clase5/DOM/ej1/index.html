@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Lenguajes</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScipt</li>
+    </ul>
+
+    <button id="btnEjecutar">Ejecutar</button>
+
+    <script>
+    var btn = document.getElementById('btnEjecutar');
+    
+    btn.addEventListener('click', ejecutar);
+
+    function ejecutar(){
+        // console.log("Hola mundo");
+        var lista = document.getElementsByTagName('ul')[0];
+        
+        // console.log(lista);
+        // alert(lista); //alert solo me muestra el type
+
+        // console.log(lista.childElementCount);
+        // lista.childElementCount // propiedad de cantidad de elementos hijo
+
+        // console.log(lista.children);
+        // lista.children//un array con los nodos hijo
+
+        // console.log(lista.childNodes.length);
+        // lista.childNodes.length //todos sus hijos
+
+        var hijos = lista.children;
+
+        for (var i=0; i<hijos.length; i++){
+            //childNodes -> todos los nodos hijos de todos los tipos
+            //childdren -> todos los nodos del tipo element
+            console.log(hijos[i].childNodes[0].nodeValue);
+            console.log(hijos[i].textContent);
+        }
+    }   
+    //BLQ MAYUS Y DESPUES SHIFT PARA CAMBIAR EL IDIOMA DEL TECLADO
+    </script>
+</body>
+</html>

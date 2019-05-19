@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="divColumnas">
+        <h2>Fusion de columnas</h2>
+        <table border="1px">
+            <tbody>
+                <tr>
+                    <td colspan="3">A</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td colspan="2">D</td>
+                    <td>E</td>
+                </tr>
+                <tr>
+                    <td colspan="4">F</td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td>H</td>
+                    <td>I</td>
+                    <td>J</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="divFilas">
+        <h2>Fusion de filas</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td rowspan="3">C</td>
+                    <td>D</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">E</td>
+                    <td>F</td>
+                    <td rowspan="3">G</td>
+                </tr>
+                <tr>
+                    <td>H</td>
+                </tr>
+                <tr>
+                    <td>I</td>
+                    <td>J</td>
+                    <td>K</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

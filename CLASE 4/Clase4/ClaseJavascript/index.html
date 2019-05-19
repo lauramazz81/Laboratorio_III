@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./script.js"></script> 
+    <title>Document</title>
+</head>
+<body>
+ <!-- <h1 onclick="Saludar();">Esto es un titulo</h1>-->
+
+  <!-- <p id="p1">parrafo p1</p>
+
+   <div id="midiv"></div>
+     
+   <script src="./script.js"></script> -->
+
+  <!-- <script>
+    /* var x = 20
+      console.log(typeof x);*/
+
+   
+
+    /*  var x = function saludar()
+     {
+          return 2;
+
+     }*/
+
+       /*Funcion anonima
+       var x = function ()
+     {
+          return 2;
+
+     }*/
+
+    /* var x = function (a){
+          return a*2;
+     }
+
+     console.log(x(5));*/
+
+
+   /*  function x (a, b, c){
+        console.log(arguments.length);
+     }
+     x(3, 5, 6);*/
+
+    /* function x (a, b, c){
+       for(var i=0; i < arguments.length; i++){
+            console.log(arguments[i])
+       }
+     }
+     x(3, 5, 6);*/
+
+
+    /* function x (a, b){
+       if(a && b)
+       return a + b;
+     }
+     x(3, 5, 6);
+     console.log(x(3,5));*/
+
+     
+     /*function x (a, b, c){
+       if(!c){
+       c=0;}
+       return a + b + c;       
+     }
+     x(3, 5, 6);
+     console.log(x(3,5,5));*/
+
+     /*encapsulo una funcion en una variable y callback 
+     function calcular(a, b, c){
+         return c(a, b) 
+     }
+     console.log(calcular(5, 6, function(a, b){ 
+           return a*b;
+     }));*/
+
+    /*function calcular(a, b,c){
+        return c(a,b);
+    }
+
+     var x = sumar
+     console.log(x(3,2));
+
+     function sumar(a,b){
+         return a+b;
+     }
+
+     console.log(calcular(5, 6, sumar));*/
+   
+    /*Objetos*/
+   /*  var x ={nombre:"juan", apellido:"perez", edad:30};
+
+     var prop = "apellido"
+     console.log(x[prop]);
+     console.log(x.nombre);*/
+
+    /*function Persona(nombre, apellido, edad){
+       this.nombre=nombre;
+       this.apellido=apellido;
+       this.edad=edad;
+    }
+
+     var x = new Persona("Ana", "Gomez", 34);
+     
+     console.log(x.edad);*/
+   
+     function Persona(nombre, apellido, edad){
+       this.nombre=nombre;
+       this.apellido=apellido;
+       this.edad=edad;
+       this.mostrarNombre = function(){
+           return this.nombre + this.apellido;
+       }
+    }
+
+     var per1 = new Persona("Ana", "Gomez", 34);
+     var per2 = new Persona("Laura", "Diaz", 20);
+     
+    /* console.log(per1.mostrarNombre());*/
+     
+     /*for(prop in per1){
+        console.log(prop);
+     }*/
+
+    
+    /*per1.nacionalidad = "Argentina"; /*agrega un campo mas a la instancia en particular*/
+    Persona.prototype.nacionalidad = "Uruguaya";/*agrega un campo mas a la "clase"*/
+
+    for(prop in per2){
+        var x = "edad";
+        console.log(prop);
+    }
+
+
+
+
+   </script>-->
+
+  <!-- <p id="p1" onclick="this.innerHTML='Cambie el texto';" onmouseover="this.style.color='blue'"" onmouseout="this.style.color='red'"">ESTO ESTO</p>
+
+
+   <script>
+      function cambiarTexto(){
+      }
+   </script>-->
+
+   <p id="p1">esto es un parrafo</p>
+
+  
+
+</body>
+</html>
